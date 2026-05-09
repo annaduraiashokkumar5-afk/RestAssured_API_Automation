@@ -9,9 +9,10 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-
+@Listeners(com.api.listeners.TestListener.class)
 
 public class LoginAPITest {
     //@Test(description = "Verify if Login API is working")
@@ -36,7 +37,7 @@ public class LoginAPITest {
         Assert.assertEquals(response.getStatusCode(),200);
 
     }
-    @Test
+    @Test(description = "Verify if Login API is working")
     public void loginTest2(){
         LoginRequest loginRequest = new LoginRequest("annaduraiashokkumar5@gmail.com","Ashok@1234");
         AuthService auth = new AuthService();

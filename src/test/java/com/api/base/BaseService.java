@@ -1,10 +1,13 @@
 package com.api.base;
 
-import com.api.models.request.LoginRequest;
+
+import com.api.Filter.LoggingFilter;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+
+import static io.restassured.RestAssured.*;
 
 public class BaseService {
     //wrapper for Rest Assured!!
@@ -13,8 +16,11 @@ public class BaseService {
 
     private static final String Base_URL="http://64.227.160.186:8080";
     private RequestSpecification requestSpecification;
+    static {
+        RestAssured.filters(new LoggingFilter());
+    }
     public BaseService(){
-        requestSpecification = RestAssured.given().baseUri(Base_URL);
+        requestSpecification = given().baseUri(Base_URL);
     }
     protected void setAuthToken(String token){
         requestSpecification.header("Authorization","Bearer "+token);
