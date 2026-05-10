@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="API Test Suite" thread-count="5">
+<suite name="API Test Suite" thread-count="5" parallel="methods">
 
     <listeners>
         <listener
@@ -10,7 +10,8 @@
 
         <classes>
             <class name="com.api.tests.LoginAPITest"/>
-
+            <class name="com.api.tests.CreateAccountsAPITest"/>
+            <class name="com.api.tests.FetchAccountDetailsAPITest"/>
         </classes>
     </test>
 </suite>
