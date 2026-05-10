@@ -1,0 +1,44 @@
+14:10:10.649 [main] INFO  com.api.listeners.TestListener - Test Suite Started!!!
+14:10:10.673 [main] INFO  com.api.listeners.TestListener - Started!!loginTest2
+14:10:10.673 [main] INFO  com.api.listeners.TestListener - Description!!
+14:10:12.609 [main] INFO  com.api.listeners.TestListener - Passed!!loginTest2
+14:10:12.610 [main] INFO  com.api.listeners.TestListener - Test Suite Completed!!!
+17:38:55.673 [main] INFO  com.api.listeners.TestListener - Test Suite Started!!!
+17:38:55.702 [main] INFO  com.api.listeners.TestListener - Started!!loginTest2
+17:38:55.702 [main] INFO  com.api.listeners.TestListener - Description!!Verify if Login API is working
+17:38:56.732 [main] INFO  com.api.Filter.LoggingFilter - BASE URI:http://64.227.160.186:8080
+17:38:56.732 [main] INFO  com.api.Filter.LoggingFilter - Request Header:Accept=*/*
+Content-Type=application/json
+17:38:56.732 [main] INFO  com.api.Filter.LoggingFilter - Request PayLoad:{"username":"annaduraiashokkumar5@gmail.com","password":"Ashok@1234"}
+17:38:57.704 [main] INFO  com.api.Filter.LoggingFilter - Status Code:200
+17:38:57.704 [main] INFO  com.api.Filter.LoggingFilter - Response Header:Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Sat, 09 May 2026 21:38:57 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+17:38:57.729 [main] INFO  com.api.Filter.LoggingFilter - Response Body:{
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbm5hZHVyYWlhc2hva2t1bWFyNUBnbWFpbC5jb20iLCJpYXQiOjE3NzgzNjI3MzcsImV4cCI6MTc3ODM2NjMzN30.rAvqWLD7xytrQpcxZ1xygrgLqEjVoI43tfxHf3KfcWQ",
+    "type": "Bearer",
+    "id": 5140,
+    "username": "annaduraiashokkumar5@gmail.com",
+    "email": "annaduraiashokkumar5@gmail.com",
+    "roles": [
+        "ROLE_USER"
+    ]
+}
+17:38:57.760 [main] INFO  com.api.listeners.TestListener - Passed!!loginTest2
+17:38:57.761 [main] INFO  com.api.listeners.TestListener - Test Suite Completed!!!
