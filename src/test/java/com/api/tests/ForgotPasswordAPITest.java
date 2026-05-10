@@ -4,8 +4,9 @@ import com.api.base.AuthService;
 import com.api.models.response.ForgotPasswordResponse;
 import io.restassured.response.Response;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
+@Listeners(com.api.listeners.TestListener.class)
 public class ForgotPasswordAPITest {
 
 
@@ -14,7 +15,6 @@ public class ForgotPasswordAPITest {
         AuthService auth = new AuthService();
         Response response = auth.forgotPassword("annaduraiashokkumar5@gmail.com");
         ForgotPasswordResponse forgotPasswordResponse = response.as(ForgotPasswordResponse.class);
-
         System.out.println(response.asPrettyString());
         System.out.println(forgotPasswordResponse.getMessage());
         Assert.assertEquals(forgotPasswordResponse.getMessage(), "If your email exists in our system, you will receive reset instructions.");
