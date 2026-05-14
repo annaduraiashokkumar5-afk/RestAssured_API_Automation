@@ -12,6 +12,9 @@
             <class name="com.api.tests.LoginAPITest"/>
             <class name="com.api.tests.CreateAccountsAPITest"/>
             <class name="com.api.tests.FetchAccountDetailsAPITest"/>
+            <class name="com.api.tests.FetchAllAccountDetailsAPITest"/>
+            <class name="com.api.tests.FetchUserDetailsAPITest"/>
+            <class name="com.api.tests.UpdateUserDetailsAPITest"/>
         </classes>
     </test>
 </suite>

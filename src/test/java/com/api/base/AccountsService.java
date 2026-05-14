@@ -15,4 +15,9 @@ public class AccountsService extends BaseService{
         setAuthToken(token);
         return getRequest(BASE_PATH+"/"+accountNumber);
     }
+
+    public Response fetchAllAccounts(String token){
+        setAuthToken(token);
+        return getRequest(BASE_PATH+"/user");
+    }
 }
