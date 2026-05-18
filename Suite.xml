@@ -15,6 +15,7 @@
             <class name="com.api.tests.FetchAllAccountDetailsAPITest"/>
             <class name="com.api.tests.FetchUserDetailsAPITest"/>
             <class name="com.api.tests.UpdateUserDetailsAPITest"/>
+            <class name="com.api.tests.TransferFundAPITest"/>
         </classes>
     </test>
 </suite>

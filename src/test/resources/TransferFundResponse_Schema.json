@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "transactionReference": {
+      "type": "string"
+    },
+    "sourceAccount": {
+      "type": "string"
+    },
+    "targetAccount": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "balanceAfterTransaction": {
+      "type": "number"
+    },
+    "type": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "transactionDate": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "transactionReference",
+    "sourceAccount",
+    "targetAccount",
+    "amount",
+    "balanceAfterTransaction",
+    "type",
+    "status",
+    "description",
+    "transactionDate"
+  ]
+}
